@@ -1,0 +1,23 @@
+:root { --bg:#0b1020; --card:#111830; --txt:#e8eefc; --muted:#a8b3cf; }
+*{box-sizing:border-box} html,body{margin:0;padding:0}
+body{font-family:Inter,system-ui,Arial,sans-serif;background:var(--bg);color:var(--txt);line-height:1.6}
+
+.nav{max-width:1100px;margin:0 auto;padding:20px 24px;display:flex;align-items:center;justify-content:space-between}
+.logo{font-weight:800;letter-spacing:.2px}
+.nav a{color:var(--muted);text-decoration:none;margin-left:16px}
+.nav a:hover{color:var(--txt)}
+
+.hero{max-width:1100px;margin:40px auto;padding:48px 24px;background:linear-gradient(180deg,#0c1530,transparent);border-radius:20px}
+.hero h1{font-size:42px;line-height:1.15;margin:0 0 12px}
+.hero p{color:var(--muted);max-width:760px;margin:0 0 20px}
+.cta{display:flex;gap:14px;align-items:center}
+.btn{background:#00ff88;color:#001b12;padding:12px 18px;border-radius:12px;text-decoration:none;font-weight:700}
+.btn:hover{filter:brightness(1.05)}
+.badge{font-size:14px;color:#9feac6}
+
+.grid{max-width:1100px;margin:28px auto 60px;display:grid;gap:16px;padding:0 24px;grid-template-columns:repeat(3,minmax(0,1fr))}
+.grid article{background:var(--card);padding:18px;border-radius:14px;border:1px solid #1f2940}
+.grid h3{margin:6px 0 6px;font-size:18px}
+.grid p{margin:0;color:var(--muted)}
+footer{max-width:1100px;margin:40px auto 60px;padding:0 24px;color:var(--muted)}
+@media (max-width:900px){ .grid{grid-template-columns:1fr} .hero h1{font-size:32px} }
